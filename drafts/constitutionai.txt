@@ -1,0 +1,31 @@
+@article{bai2022constitutional,
+  title={Constitutional AI: Harmlessness from AI Feedback},
+  author={Bai, Yuntao and Kadavath, Sholto and Kundu, Sandipan and Askell, Amanda and Kernion, Jackson and Henighan, Tom and others},
+  journal={arXiv preprint arXiv:2212.08073},
+  year={2022}
+}
+
+@article{russell2022ethics,
+  title={The Ethics of Artificial Intelligence in Warfare},
+  author={Russell, Stuart and Tegmark, Max and Walsh, Toby},
+  journal={Nature Machine Intelligence},
+  year={2022},
+  volume={4},
+  pages={404--410}
+}
+
+@misc{unidir2024briefing,
+  title={AI in the Military Domain: A Briefing Note for States},
+  author={UNIDIR},
+  howpublished={\url{https://unidir.org/publication/ai-military-domain}},
+  year={2024},
+  note={Accessed July 2025}
+}
+
+@misc{dodrai2020principles,
+  title={Department of Defense AI Ethical Principles},
+  author={U.S. Department of Defense},
+  howpublished={\url{https://media.defense.gov/2020/Feb/24/2002259511/-1/-1/0/DOD-AI-ETHICAL-PRINCIPLES.PDF}},
+  year={2020},
+  note={Accessed July 2025}
+}
