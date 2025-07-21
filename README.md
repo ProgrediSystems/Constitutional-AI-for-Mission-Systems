@@ -17,7 +17,7 @@ This repository hosts the research and codebase for exploring **Constitutional A
 ## 🔗 Learn More
 - 🌐 Visit [Progredi Systems](https://progredisystems.com)
 - 📄 Read the [White Paper Draft](drafts)
-- 🧠 Explore the [Methodology](drafts)
+- 🧠 Explore the [Methodology](methodology)
 
 ---
 
