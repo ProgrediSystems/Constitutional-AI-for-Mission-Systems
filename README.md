@@ -2,8 +2,6 @@
 
 > ⚙️ A research initiative by **Progredi Systems** — advancing trustworthy autonomy for national defense.
 
-![Progredi Systems Banner](https://www.progredisystems.com/Progredi_Systems_Color_logo.jpeg)
-
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 [![Status: In Development](https://img.shields.io/badge/status-active-brightgreen.svg)]()
 [![ArXiv Submission](https://img.shields.io/badge/arxiv-preprint-lightgrey.svg)]()
