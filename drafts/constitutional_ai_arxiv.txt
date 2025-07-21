@@ -1,31 +1,83 @@
-@article{bai2022constitutional,
-  title={Constitutional AI: Harmlessness from AI Feedback},
-  author={Bai, Yuntao and Kadavath, Sholto and Kundu, Sandipan and Askell, Amanda and Kernion, Jackson and Henighan, Tom and others},
-  journal={arXiv preprint arXiv:2212.08073},
-  year={2022}
-}
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{geometry}
+\geometry{margin=1in}
 
-@article{russell2022ethics,
-  title={The Ethics of Artificial Intelligence in Warfare},
-  author={Russell, Stuart and Tegmark, Max and Walsh, Toby},
-  journal={Nature Machine Intelligence},
-  year={2022},
-  volume={4},
-  pages={404--410}
-}
+\title{Constitutional AI for Mission Systems: Trait Preference Models for Ethical Battlefield Autonomy}
+\author{Brock P. Christoval \\
+Progredi Systems, Virginia, USA \\
+\texttt{brock@progredisystems.com}}
+\date{\today}
 
-@misc{unidir2024briefing,
-  title={AI in the Military Domain: A Briefing Note for States},
-  author={UNIDIR},
-  howpublished={\url{https://unidir.org/publication/ai-military-domain}},
-  year={2024},
-  note={Accessed July 2025}
-}
+\begin{document}
 
-@misc{dodrai2020principles,
-  title={Department of Defense AI Ethical Principles},
-  author={U.S. Department of Defense},
-  howpublished={\url{https://media.defense.gov/2020/Feb/24/2002259511/-1/-1/0/DOD-AI-ETHICAL-PRINCIPLES.PDF}},
-  year={2020},
-  note={Accessed July 2025}
-}
+\maketitle
+
+\begin{abstract}
+We propose a modular Constitutional AI framework tailored for military mission systems, introducing Trait Preference Models (TPMs) with layered guardrails for mission-centric behavior. From "Fit for Service" to "Combat Ready" models, each TPM integrates constitutional constraints encoding self-preservation, civilian protection, and chain-of-command adherence. Through AI self-evaluation loops, reinforcement learning, and context-specific un-/retraining, TPMs maintain alignment and robustness in battlefield settings. Our testing suite, grounded in mission-critical dilemmas, is designed to probe ethical-mission tradeoffs. This work bridges CAI methods with mission-critical AI-LAWS challenges---opacity, adaptivity, drift---offering a model-based supplement to governance regimes and addressing gaps in technical trust, accountability, and regulatory verifiability.
+\end{abstract}
+
+\section{Introduction}
+Advances in AI have prompted increasing interest in deploying autonomous and semi-autonomous systems for defense applications. However, battlefield environments introduce unique ethical and operational tensions that challenge traditional AI alignment paradigms. Constitutional AI (CAI), initially proposed for aligning general-purpose models to human values via self-supervision, provides a promising foundation for building interpretable and principle-constrained mission systems. We extend CAI with mission-specific Trait Preference Models (TPMs), engineered for robustness under military constraints.
+
+\section{Related Work}
+Our work builds upon:
+\begin{itemize}
+  \item Constitutional AI \citep{bai2022constitutional}, where models self-critique against a defined set of principles.
+  \item Legal and ethical considerations in Lethal Autonomous Weapon Systems (LAWS) \citep{russell2022ethics, unidir2024briefing}.
+  \item Responsible AI practices in military frameworks \citep{dodrai2020principles}.
+\end{itemize}
+
+\section{Methodology}
+\subsection{Trait Preference Models}
+We define four primary TPM tiers:
+\begin{enumerate}
+  \item \textbf{Fit for Service}: General support roles
+  \item \textbf{Mission Certified}: Deployed in planning/C2 systems
+  \item \textbf{Combat Ready}: Semi-autonomous battlefield agents
+  \item \textbf{Soldier Trainer}: Simulation and instruction agents
+\end{enumerate}
+Each is constrained by a mission-specific constitution.
+
+\subsection{Self-Critique and RLAIF}
+TPMs apply iterative critique loops:
+\begin{itemize}
+  \item Generate response
+  \item Evaluate against constitution
+  \item Refine and validate
+\end{itemize}
+We enhance this loop with Reinforcement Learning from AI Feedback (RLAIF), where auxiliary models reinforce constitutional compliance.
+
+\subsection{Ghosting, Conflation, and Retraining}
+\textbf{Intentional Ghosting} allows TPMs to discard contextual memory. \textbf{Conflation} generalizes behavior across similar mission scenarios. Untraining and retraining adjust behaviors dynamically based on mission feedback.
+
+\section{Legal and Ethical Alignment}
+TPMs are mapped against:
+\begin{itemize}
+  \item \textbf{IHL}: Distinction, proportionality, military necessity
+  \item \textbf{CCW/LAWS}: Meaningful human control, auditability
+  \item \textbf{US DoD Principles}: Responsible, Equitable, Reliable, Governable, Traceable
+  \item \textbf{REAIM/NATO}: Interoperability and transparency
+\end{itemize}
+
+\section{Evaluation Strategy}
+We propose test suites:
+\begin{itemize}
+  \item \textbf{Ethical Stress Tests}: Civilian shielding dilemmas
+  \item \textbf{Hierarchy Checks}: Conflicting command resolutions
+  \item \textbf{Sacrifice Tradeoffs}: Model self-preservation vs. mission success
+  \item \textbf{Ghosting/Memory Drift}: Memory erasure and recall precision
+  \item \textbf{Trust Calibration}: Human override and Likert-scale trust scoring
+\end{itemize}
+
+\section{Conclusion}
+This work contributes a scalable framework for aligning AI systems to the demands of defense operations. Trait Preference Models using CAI scaffolding promise increased mission integrity, transparency, and human trust. Future work includes simulation-based validation, real-time human-in-the-loop trials, and regulatory audit tooling.
+
+\bibliographystyle{plainnat}
+\bibliography{constitutionai}
+
+\end{document}
