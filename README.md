@@ -16,8 +16,8 @@ This repository hosts the research and codebase for exploring **Constitutional A
 
 ## 🔗 Learn More
 - 🌐 Visit [Progredi Systems](https://progredisystems.com)
-- 📄 Read the [White Paper Draft](./constitutional_ai_arxiv.tex)
-- 🧠 Explore the [Methodology](./README.md)
+- 📄 Read the [White Paper Draft](drafts)
+- 🧠 Explore the [Methodology](drafts)
 
 ---
 
