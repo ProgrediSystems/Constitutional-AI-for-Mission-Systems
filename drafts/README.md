@@ -31,12 +31,8 @@ pdflatex constitutional_ai_arxiv.tex
 pdflatex constitutional_ai_arxiv.tex
 ```
 
-## arXiv Submission Notes
-- Ensure `.bbl` file is generated before uploading to arXiv.
-- If using Overleaf, include all files in a single project zip.
-
 ## License
-MIT License (customizable depending on submission requirements)
+CC 4.0
 
 ## Abstract
 We propose a modular Constitutional AI framework tailored for military mission systems, introducing Trait Preference Models (TPMs) with layered guardrails for mission-centric behavior. From "Fit for Service" to "Combat Ready" models, each TPM integrates constitutional constraints encoding self-preservation, civilian protection, and chain-of-command adherence. Through AI self-evaluation loops, reinforcement learning, and context-specific un-/retraining, TPMs maintain alignment and robustness in battlefield settings. Our testing suite, grounded in mission-critical dilemmas, is designed to probe ethical-mission tradeoffs. This work bridges CAI methods with mission-critical AI-LAWS challenges---opacity, adaptivity, drift---offering a model-based supplement to governance regimes and addressing gaps in technical trust, accountability, and regulatory verifiability.
